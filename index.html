@@ -7,27 +7,30 @@
   <body>
     <header class="header">
       <nav>
+        <img src="img/logo-sedona.svg" width="140px" height="71px" alt="logo">
         <ul>
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a></li>
-          <li><a href="#"><img src="img/logo-sedona.svg" width="140px" height="71px" alt="button"></a></li>
+          
           <li><a href="#">карта штата</a></li>
-          <li><a href="#">гостиницы</a></li>
+          <li><a href="/inner.html">гостиницы</a></li>
         </ul>
       </nav>
+    </header>
 
+      <section class="meeting">
       <h1>Добро пожаловать в Sedona</h1>
 
-      <section class="logo">
+      <div class="logo">
         <img src="img/intro-welcome.svg" width="458px" height="350px" alt="добро пожаловать">
 
-      </section>
+      </div>
       <h2>Седона - небольшой городок в аризоне,<br>заслуживающий большего</h2>
 
       <p>рассмотрим 5 причин,по которым седона круче, чем гранд каньон!</p>
-      
+      </section>
 
-    </header>
+    
 
     <main class="main">
 
@@ -39,20 +42,21 @@
         <p>седона - не атракцион для туристов <br> там течет своя жизнь</p>
         <img src="https://via.placeholder.com/150x100" alt="city">
         
-        <dl>
-          <dt>жилье</dt>
-          <dd>рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
-        </dl> 
+        
+          <h3>жилье</h3>
+          <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p> 
+        
 
-        <dl>
-          <dt>еда</dt>
-          <dd>всегда заказывайте фирменный бургер, вы не разочаруетесь!</dd>
-        </dl> 
+        
+          <h3>еда</h3>
+          <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> 
+        
 
-        <dl>
-          <dt>сувениры</dt>
-          <dd>не только китайского, но и местного производства!</dd>
-        </dl> 
+        
+          <h3>сувениры</h3>
+           <p>не только китайского, но и местного производства!</p> 
+           <!-- потом оберну их в div -->
+        
 
         <img src="https://via.placeholder.com/150x100" alt="canyon">
         <h3>Там есть мост дьявола</h3>
@@ -82,7 +86,11 @@
 
       <section class="map">
         <div class="popup">
-
+          <h3>поиск гостиницы в седоне</h3>
+          <p>Дата заезда</p> <input type="date" name="date in">
+          <p>Дата выезда</p>  <input type="date" name="date out">
+          <p>взрослые</p> <input type="number" name="adults">
+          <p>дети</p> <input type="number" name="kids">
         </div>
       </section>
 
@@ -95,14 +103,16 @@
       </div>
 
       <div class="links">
-        <a href="#"><img src="img/twitter.svg" alt="twitter" width="46px" height="48px"></a>
-        <a href="#"><img src="img/fb-icon.svg" alt="facbook" width="46px" height="48px"></a>
-        <a href="#"><img src="img/youtube.svg" alt="youtube" width="46px" height="48px"></a>
+        <!--
+        <<a href="#">twitter<img src="img/twitter.svg" alt="twitter" width="46px" height="48px"></a>
+        <a href="#">facebook<img src="img/fb-icon.svg" alt="facebook" width="46px" height="48px"></a>
+        <a href="#">youtube<img src="img/youtube.svg" alt="youtube" width="46px" height="48px"></a>
+      -->
       </div>
 
       <div class="logo">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="logo" width="115px" height="42px"></a>
+        <a href="https://up.htmlacademy.ru/htmlcss/27/project/sedona#sedona-3-8">html academy<img src="img/logo-htmlacademy.svg" alt="logo academy" width="115px" height="42px"></a>
       </div>
       
     </footer>
