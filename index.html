@@ -7,7 +7,7 @@
   <body>
     <header class="header">
       <nav>
-        <img src="img/logo-sedona.svg" width="140px" height="71px" alt="logo">
+        <img src="img/logo-sedona.svg" width="140px" height="71px" alt="логотип Седона">
         <ul>
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a></li>
@@ -19,7 +19,7 @@
     </header>
 
       <section class="meeting">
-      <h1>Добро пожаловать в Sedona</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Sedona</h1>
 
       <div class="logo">
         <img src="img/intro-welcome.svg" width="458px" height="350px" alt="добро пожаловать">
@@ -35,12 +35,12 @@
     <main class="main">
 
       <section class="advantages">
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
 
         <h3>Настоящий городок</h3>
         <p>- №1 -</p>
         <p>седона - не атракцион для туристов <br> там течет своя жизнь</p>
-        <img src="https://via.placeholder.com/150x100" alt="city">
+        <img src="https://via.placeholder.com/150x100" alt="изображение города">
         
         
           <h3>жилье</h3>
@@ -58,7 +58,7 @@
            <!-- потом оберну их в div -->
         
 
-        <img src="https://via.placeholder.com/150x100" alt="canyon">
+        <img src="https://via.placeholder.com/150x100" alt="Гранд Каньон">
         <h3>Там есть мост дьявола</h3>
         <p>- №2 -</p>
         <p>да, по нему можно пройти! если конечно <br> вы осмелитесь</p>
@@ -85,13 +85,22 @@
       </section>
 
       <section class="map">
-        <div class="popup">
+        <form action="https://echo.htmlacademy.ru" method="post" class="popup">
           <h3>поиск гостиницы в седоне</h3>
-          <p>Дата заезда</p> <input type="date" name="date in">
-          <p>Дата выезда</p>  <input type="date" name="date out">
-          <p>взрослые</p> <input type="number" name="adults">
-          <p>дети</p> <input type="number" name="kids">
-        </div>
+          <label>Дата заезда
+            <input type="date" name="date in">
+          </label> 
+          <label>Дата выезда
+            <input type="date" name="date out">
+          </label>
+          <label>взрослые
+            <input type="number" name="adults">
+          </label> 
+          <label>дети
+            <input type="number" name="kids">
+          </label> 
+          <button type="submit">найти</button>
+        </form>
       </section>
 
     </main>
@@ -103,16 +112,16 @@
       </div>
 
       <div class="links">
-        <!--
-        <<a href="#">twitter<img src="img/twitter.svg" alt="twitter" width="46px" height="48px"></a>
-        <a href="#">facebook<img src="img/fb-icon.svg" alt="facebook" width="46px" height="48px"></a>
-        <a href="#">youtube<img src="img/youtube.svg" alt="youtube" width="46px" height="48px"></a>
-      -->
+        
+        <a href="#" aria-label ="twitter"><img src="img/twitter.svg" alt="" width="46px" height="48px"></a>
+        <a href="#" aria-label="facebook"><img src="img/fb-icon.svg" alt="" width="46px" height="48px"></a>
+        <a href="#" aria-label="youtube"><img src="img/youtube.svg" alt="" width="46px" height="48px"></a>
+      
       </div>
 
       <div class="logo">
         <p>Website by</p>
-        <a href="https://up.htmlacademy.ru/htmlcss/27/project/sedona#sedona-3-8">html academy<img src="img/logo-htmlacademy.svg" alt="logo academy" width="115px" height="42px"></a>
+        <a href="https://up.htmlacademy.ru/htmlcss/27/project/sedona#sedona-3-8" aria-label="html academy"><img src="img/logo-htmlacademy.svg" alt="logo academy" width="115px" height="42px"></a>
       </div>
       
     </footer>
