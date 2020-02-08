@@ -1,0 +1,71 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    text-transform: uppercase;
+    background-color: #ffffff;
+  }
+
+a {
+      text-decoration: none;
+      color: inherit;
+}
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+.header {
+    /* height: 56px; */
+}
+
+.nav {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.857;
+    text-align: center;
+}
+
+.nav-site {
+    list-style: none;
+}
+
+.meeting {
+
+}
+
+.logo {
+    text-align: center;
+    height: 510px;
+    background-color: #ffffff;
+    background-image: url(../img/background-logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo-bottom {
+    width: 100%;
+    height: 59px;
+    background-image: url(../img/intro-mask.svg);
+    margin-top: 94px;
+    background-size: cover;
+}
+.logo-text {
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.238;
+    
+}
+.logo-text p {
+    color: #333333;
+    font-size: 14px;
+}
