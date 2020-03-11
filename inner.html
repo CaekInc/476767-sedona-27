@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Гостиницыt</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
-<body>
-    <header class="header">
-        <nav>
-          <a href="/index.html"><img src="img/logo-sedona.svg" width="140px" height="71px" alt="логотип Седона"></a>
-          <ul>
-            <li><a href="#">информация</a></li>
-            <li><a href="#">фото и видео</a></li>
-            
-            <li><a href="#">карта штата</a></li>
-            <li><a href="#">гостиницы</a></li>
-          </ul>
-        </nav>
-    </img>
+<body> 
+  <header class="header">
+    <nav class="nav">
+      
+      
+      <ul class="nav-site">
+        <li><a href="#">информация</a></li>
+        <li><a href="#">фото и видео</a></li>
+          <div class="nav-logo">
+            <a href="/index.html"><img src="img/logo-sedona.svg" width="140px" height="71px" alt="логотип Седона"></a>
+          </div>
+        <li><a href="#">карта штата</a></li>
+        <li><a href="/inner.html">гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
     
     
     <main class="main">
 
+      <section class="hotel-search">
+
+      </section>
+
       <div class="hotel-card">
-        <img src="img/hotelcard-1.jpg" alt="фотография отеля Амара">
-        <p>amara resort & spa</p>
-        <p>гостиница</p> 
-        <p>от 4000 Р.</p>
-        <form form action="https://echo.htmlacademy.ru" method="post">
-          <button type="button">подробнее</button>
-          <button type="submit">забронировать</button>
-        </form>
+        
+        <div class="hotel-card-main">
+          
+          <img src="img/hotelcard-1.jpg" alt="фотография отеля Амара">
+          
+          
+          
+          <div class="hotel-card-text">
+            
+            <p class="hotel-card-title">amara resort & spa</p>
+            <p>гостиница</p> <p class="hotel-card-text-inner">от 4000 Р.</p> 
+            
+            
+              <form form action="https://echo.htmlacademy.ru" method="post">
+                <button type="button" class="hotel-card-button">подробнее</button>
+                <button type="submit" class="hotel-card-button-submit">забронировать</button>
+              </form> 
+          </div>
+
+        </div>
 
         <div class="stars">
           <img src="/img/star.svg" alt="звезды">
@@ -42,12 +65,12 @@
 
       <div class="hotel-card">
         <img src="img/hotelcard-2.jpg" alt="фотография отеля Десерт Квол Инн">
-        <p>desert qual inn</p>
+        <p class="hotel-card-title">desert qual inn</p>
         <p>мотель</p> 
         <p>от 3000 Р.</p>
         <form form action="https://echo.htmlacademy.ru" method="post">
-          <button type="button">подробнее</button>
-          <button type="submit">забронировать</button>
+          <button type="button" class="hotel-card-button">подробнее</button>
+          <button type="submit" class="hotel-card-button-submit">забронировать</button>
         </form>
 
         <div class="stars">
@@ -59,12 +82,12 @@
 
       <div class="hotel-card">
         <img src="img/hotelcard-3.jpg" alt="фотография отеля Виллас">
-        <p>villas at poco diablo</p>
+        <p class="hotel-card-title">villas at poco diablo</p>
         <p>апартаменты</p> 
         <p>от 2000 Р.</p>
         <form form action="https://echo.htmlacademy.ru" method="post">
-          <button type="button">подробнее</button>
-          <button type="submit">забронировать</button>
+          <button type="button" class="hotel-card-button">подробнее</button>
+          <button type="submit" class="hotel-card-button-submit">забронировать</button>
         </form>
 
         <div class="stars">
@@ -80,17 +103,18 @@
       
       <div class="hashtag">
         <p>#visitsedona</p>
+        <p>тел: +7(495) 666-02-66</p>
       </div>
 
       <div class="links">
         
-        <a href="#" aria-label ="twitter"><img src="img/twitter.svg" alt="" width="46px" height="48px"></a>
-        <a href="#" aria-label="facebook"><img src="img/fb-icon.svg" alt="" width="46px" height="48px"></a>
-        <a href="#" aria-label="youtube"><img src="img/youtube.svg" alt="" width="46px" height="48px"></a>
+        <a href="#" aria-label ="twitter"><img src="img/twitter.svg" alt="" width="17px" height="15px"></a>
+        <a href="#" aria-label="facebook"><img src="img/fb-icon.svg" alt="" width="17px" height="15px"></a>
+        <a href="#" aria-label="youtube"><img src="img/youtube.svg" alt="" width="17px" height="15px"></a>
       
       </div>
 
-      <div class="logo">
+      <div class="footer-logo">
         <p>Website by</p>
         <a href="https://up.htmlacademy.ru/htmlcss/27/project/sedona#sedona-3-8" aria-label="html academy"><img src="img/logo-htmlacademy.svg" alt="logo academy" width="115px" height="42px"></a>
       </div>

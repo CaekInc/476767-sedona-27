@@ -9,16 +9,19 @@
     
   </head>
   <body>
+    <div class="wrapper">
     <header class="header">
       <nav class="nav">
-        <div class="nav-logo">
-          <img src="img/logo-sedona.svg" width="140px" height="71px" alt="логотип Седона">
-        </div>
+        
         
         <ul class="nav-site">
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a></li>
-          
+
+            <div class="nav-logo">
+              <img src="img/logo-sedona.svg" width="140px" height="72px" alt="логотип Седона">
+            </div>
+
           <li><a href="#">карта штата</a></li>
           <li><a href="/inner.html">гостиницы</a></li>
         </ul>
@@ -31,7 +34,8 @@
 
 
         <div class="meeting-logo">
-          <img src="img/intro-welcome.svg" width="458px" height="350px" alt="добро пожаловать">
+         
+          <img class="meeting-text" src="img/intro-welcome.svg" width="459px" height="353px" alt="добро пожаловать">
           <div class="logo-bottom"></div>
         </div>
         
@@ -51,44 +55,56 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <h3>Настоящий городок</h3>
-        <p>- №1 -</p>
-        <p>седона - не атракцион для туристов <br> там течет своя жизнь</p>
-        <img src="https://via.placeholder.com/150x100" alt="изображение города">
-        
-        
-          <h3>жилье</h3>
-          <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p> 
-        
 
+        <section class="advantages-1">
+          <div class="advantages-blue">
+            <h3>Настоящий<br> городок</h3>
+            <p>- №1 -</p>
+            <p>седона - не атракцион для туристов <br> там течет своя жизнь</p>
+          </div>
+          <img src="img/advantages-picture.jpg" alt="изображение города">
+          
+            <div class="adv-house advantages-white">
+              <h3>жилье</h3>
+              <p>рекомендуем пожить в <br>настоящем мотеле, все как в кино!</p> 
+            </div>
+
+            <div class="adv-food advantages-white">
+              <h3>еда</h3>
+              <p>всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p> 
+            </div>
+
+            <div class="adv-souvenir advantages-white">
+              <h3>сувениры</h3>
+              <p>не только китайского, но и местного<br> производства!</p> 
+            </div>
+        </section>
         
-          <h3>еда</h3>
-          <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> 
-        
+        <section class="advantages-2">
+          <img src="img/advantages-picture2.jpg" alt="Гранд Каньон">
+          <div class="advantages-blue">
+            <h3>Там есть мост дьявола</h3>
+            <p>- №2 -</p>
+            <p>да, по нему можно пройти! если конечно <br> вы осмелитесь</p>
+          </div>
+          <div class="advantages-beige">
+            <h3>небольшая<br> площадь</h3>
+            <p>- №3 -</p>
+            <p>все достопримечательности <br> находятся очень близко</p>
+          </div>
 
-        
-          <h3>сувениры</h3>
-           <p>не только китайского, но и местного производства!</p> 
-           <!-- потом оберну их в div -->
-        
+          <div class="advantages-beige">
+            <h3>Красивая<br> дорога</h3>
+            <p>- №4 -</p>
+            <p>ехать в седону из лас-вегаса совсем <br> не скучно!</p>
+          </div>
 
-        <img src="https://via.placeholder.com/150x100" alt="Гранд Каньон">
-        <h3>Там есть мост дьявола</h3>
-        <p>- №2 -</p>
-        <p>да, по нему можно пройти! если конечно <br> вы осмелитесь</p>
-
-        <h3>небольшая площадь</h3>
-        <p>- №3 -</p>
-        <p>все достопримечательности <br> находятся очень близко</p>
-
-        <h3>Красивая дорога</h3>
-        <p>- №4 -</p>
-        <p>ехать в седону из лас-вегаса совсем <br> не скучно!</p>
-
-        <h3>мало туристов</h3>
-        <p>- №5 -</p>
-        <p>большинство едет в гранд каньон <br> и толпится там</p>
-
+          <div class="advantages-beige">
+            <h3>мало<br> туристов</h3>
+            <p>- №5 -</p>
+            <p>большинство едет в гранд каньон <br> и толпится там</p>
+          </div>
+        </section>  
 
       </section>
 
@@ -99,20 +115,32 @@
       </section>
 
       <section class="map">
-        <form action="https://echo.htmlacademy.ru" method="post" class="popup">
-          <h3>поиск гостиницы в седоне</h3>
-          <label>Дата заезда:
-            <input type="date" name="date in">
-          </label> 
-          <label>Дата выезда:
-            <input type="date" name="date out">
-          </label>
-          <label>взрослые:
-            <input type="number" name="adults">
-          </label> 
-          <label>дети:
-            <input type="number" name="kids">
-          </label> 
+        <form action="https://echo.htmlacademy.ru" method="post" class="poppup">
+          <div class="poppup-name">
+            <h3>поиск гостиницы в седоне</h3>
+          </div>
+          
+
+          
+            <div class="poppup-top">
+              <label>Дата заезда:
+                <input type="date" name="date in" value="2017-04-24">
+              </label> 
+              
+              <label>Дата выезда:
+                <input type="date" name="date out" value="2017-07-04">
+              </label>
+            </div>
+              <div class="poppup-peoples">
+                <label>взрослые:
+                  <input  type="number" name="adults" value="2">
+                </label> 
+                <label>дети:
+                  <input type="number" name="kids" value="0">
+                </label> 
+              </div>
+          
+
           <button type="submit" class="button">найти</button>
         </form>
       </section>
@@ -127,11 +155,11 @@
       </div>
 
       <div class="links">
-        
-        <a href="#" aria-label ="twitter"><img src="img/twitter.svg" alt="" width="17px" height="15px"></a>
-        <a href="#" aria-label="facebook"><img src="img/fb-icon.svg" alt="" width="17px" height="15px"></a>
-        <a href="#" aria-label="youtube"><img src="img/youtube.svg" alt="" width="17px" height="15px"></a>
-      
+        <ul>
+         <li class="links-button"><a href="#" aria-label ="twitter"><img src="img/twitter.svg" alt="" width="17px" height="15px"></a></li> 
+         <li class="links-button"><a href="#" aria-label="facebook"><img src="img/fb-icon.svg" alt="" width="17px" height="15px"></a></li> 
+         <li class="links-button"><a href="#" aria-label="youtube"><img src="img/youtube.svg" alt="" width="17px" height="15px"></a></li> 
+        </ul>
       </div>
 
       <div class="footer-logo">
@@ -141,6 +169,6 @@
       
     </footer>
     
-
+  </div>
   </body>
 </html>

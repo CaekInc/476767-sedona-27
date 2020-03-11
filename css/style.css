@@ -1,19 +1,35 @@
-
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 body {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 21px;
+    font-weight: 400;
     color: black;
     text-transform: uppercase;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
+    
   }
 
 a {
       text-decoration: none;
       color: inherit;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 .visually-hidden { 
     position: absolute !important;
     height: 1px; 
@@ -23,57 +39,165 @@ a {
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; /* added line */
 }
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
 
 .header {
-    /* height: 56px; */
+    
+    
+    
 }
 
 .nav {
     font-size: 14px;
     font-weight: bold;
     line-height: 1.857;
-    text-align: center;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 .nav-site {
     list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    justify-self: stretch;
+    align-items: center;
+    flex: 1;
+    
+    
+}
+.nav-logo{
+    padding-top: 22px;
+    z-index: 1;
+    
+    
+    
 }
 
 .meeting {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .meeting-logo {
     text-align: center;
-    height: 510px;
-    background-color: #ffffff;
-    background-image: url(../img/background-logo.jpg);
-    background-size: cover;
+    min-height: 509px;
+    background-color: #81B3D2;
+    background-image: url(../img/background-photo.jpg   );
+    /* background-size: cover; */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -76px;
+  
+    z-index: 0;
+}
+.meeting-text {
+    margin-top: 76px;
+
 }
 .logo-bottom {
     width: 100%;
-    height: 59px;
+    height: 56px;
     background-image: url(../img/intro-mask.svg);
-    margin-top: 94px;
-    background-size: cover;
+    margin-top: 18px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .logo-text {
     text-align: center;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 51px;
+    
+    
+    
+}
+.logo-text h2 {
     font-size: 21px;
     line-height: 1.238;
-    
 }
 .logo-text p {
     color: #333333;
     font-size: 14px;
 }
 
+.advantages-1,
+.advantages-2 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #eeeeee;
+}
+.advantages-blue {
+    background-color: #81b3d2;
+    height: 256px;
+    width: 400px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.advantages-blue h3 {
+    /* padding-bottom: 24px; */
+    padding-top: 46px;
+    margin-top: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.advantages-white {
+    width: 400px;
+    height: 330px;
+    background-color: #ffffff;
+    padding-top: 160px;
+}
+.advantages-beige {
+    width: 400px;
+    height: 256px;
+    background-color: #f2f2f2
+}
+.advantages-beige h3 {
+    padding-top: 46px;
+    margin-top: 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+.advantages-white h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+.adv-house {
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+.adv-food {
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+.adv-souvenir {
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+    background-position: center 25%;
+}
+
 .offer {
     text-align: center;
     font-size: 21px;
     line-height: 1.238;
+    padding-bottom: 133px;
+    background-color: #ffffff;
 }
 .offer p {
     color: #333333;
@@ -81,36 +205,86 @@ a {
 }
 
 .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/map.jpg);
     background-size: cover;
     height: 473px;
+
     
 }
-.popup {
+.poppup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+   
     text-align: center;
     font-family: inherit;
     font-size: 14px;
     line-height: 1.857;
     font-weight: bold;
+    background-color: #ffffff;
+    width: 568px;
+    height: 481px;
+    margin-bottom: 164px;
 
 }
-.popup h3 {
+.poppup-name {
     font-size: 21px;
     line-height: 1.238;
     background-color: #766357;
     color: #ffffff;
+    height: 86px;
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    
+    
 }
-.popup input {
+
+.poppup-top {
+    display: flex;
+    flex-wrap: wrap;
+    height: 110px;
+    justify-content: space-between;
+    margin-left: 55px;
+    margin-top: 54px;
+}
+.poppup input {
     font-size: 14px;
     line-height: 1.857;
     font-weight: bold;
     text-transform: uppercase;
     background-color: #f2f2f2;
     border: none;
-
+    width: 356px;
+    height: 38px;
+    margin-left: 41px;
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+.poppup-peoples {
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 55px;
+}
+.poppup-peoples input {
+    width: 114px;
+    display: inline-block;
+    height: 38px;
+    
 }
 
 .button {
+    display: inline-block;
     font-family: "PT Sans", sans-serif;
     font-size: 21px;
     font-weight: bold;
@@ -122,10 +296,16 @@ a {
     background-color: #81b3d2;
     color: #ffffff;
     border: none;
+    margin-bottom: 56px;
+    
+   
 }
 
 .footer {
     background-color: #f9fbf6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .hashtag {
     font-family: "PT Sans", sans-serif;
@@ -134,14 +314,120 @@ a {
     text-transform: uppercase;
     line-height: 1.238;
 }
-.links a {
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.links-button {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
+}
+.links a {
+    
     
 }
 .footer-logo {
+    display: flex;
+    
     font-family: "PT Sans", sans-serif;
     font-size: 14px;
+    align-items: center;
 
+}
+
+
+/* стили второй страницы */
+
+
+.hotel-card  {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    height: 90px;
+    margin-top: 61px;
+    
+
+}
+.hotel-card-main {
+    display: flex;
+    width: 425px;
+    height: 100%;
+    justify-content: space-between;
+    
+    
+    
+}
+.hotel-card-text {
+    display: flex;
+    flex-direction: column;
+    
+    height: 90px;
+    width: 258px;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    
+}
+.hotel-card-text-inner {
+    align-self: flex-end;
+    
+    
+}
+.hotel-card-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    height: 22px;
+
+}
+
+  
+
+.hotel-card-button {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    width: 110px;
+    height: 27px;
+    background-color: #81b3d2;
+    border: none;
+
+}
+.hotel-card-button-submit {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    height: 27px;
+    width: 142px;
+    background-color: #766357;
+    border: none;
+
+}
+
+.stars {
+
+}
+
+.stars p {
+    background-color: #f2f2f2;
 }
