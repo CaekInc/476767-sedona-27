@@ -58,8 +58,8 @@ img {
     line-height: 1.857;
     height: 55px;
     background-color: white;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     
     
 }
@@ -69,48 +69,80 @@ img {
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
+    /* justify-content: space-around;
     justify-self: stretch;
     align-items: center;
-    flex: 1;
+    flex: 1; */
     
     
 }
+.nav-site li {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 15px;
+    text-align: center; 
+}
+.nav-site li:nth-child(-n+2) {
+    text-align: left;
+}
+  
+.nav-site li:nth-child(n+3) {
+    text-align: right;
+}
+  
+.nav-site li:first-child {
+    padding-left: 70px;
+}
+  
+.nav-site li:last-child {
+    padding-right: 70px;
+}
+.nav-site a:hover {
+    color: #81b3d2;
+}
+
 .nav-logo{
-    padding-top: 22px;
+    width: 140px;
+    height: 72px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -1px;
     z-index: 1;
     
     
     
 }
 
-.meeting {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .meeting-logo {
-    text-align: center;
-    min-height: 509px;
+    
+    height: 509px;
     background-color: #81B3D2;
     background-image: url(../img/background-photo.jpg   );
-    /* background-size: cover; */
+ 
     background-repeat: no-repeat;
     background-position: center -76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding-top: 78px;
+    
+
   
     z-index: 0;
 }
-.meeting-text {
-    margin-top: 76px;
 
-}
-.logo-bottom {
+.meeting-logo::after {
+    content: "";
     width: 100%;
-    height: 56px;
-    background-image: url(../img/intro-mask.svg);
-    margin-top: 18px;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    height: 59px;
+    background: url(../img/intro-mask.svg) ;
+    position: relative;
+    bottom: -12px;
+    
 }
 .logo-text {
     text-align: center;
@@ -182,12 +214,12 @@ img {
     background-position: center 25%;
 }
 .adv-food {
-    background-image: url(../img/icon-2.svg);
+    background-image: url(../img/icon-3.svg);
     background-repeat: no-repeat;
     background-position: center 25%;
 }
 .adv-souvenir {
-    background-image: url(../img/icon-3.svg);
+    background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
     background-position: center 25%;
 }
