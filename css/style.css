@@ -44,6 +44,7 @@ img {
     margin: 0 auto;
     padding: 0 0;
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    position: relative;
 }
 
 .header {
@@ -335,48 +336,307 @@ img {
 
 .footer {
     background-color: #f9fbf6;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 121px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 123px;
+    padding-right: 100px;
+    padding-bottom: 34px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    
+   
+}
+.footer-wrap {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* position: absolute;
+    bottom: 0; */
 }
 .hashtag {
-    font-family: "PT Sans", sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.238;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+    
 }
 .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.links li {
+    position: relative;
+    margin: 0;
+    list-style-type: none;
 }
 .links-button {
-    display: flex;
-    
-    justify-content: space-between;
-    align-items: center;
-    background-color: #81b3d2;
+    display: block;
     width: 46px;
     height: 48px;
+    background-color: #81b3d2;
+    margin: 3px;
+    margin-bottom: 5px;
+    font-size: 0;
+    line-height: 0;
 }
-.links a {
-    
-    
+.links-button::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.links-button:focus {
+    background-color: #5496bd;
+}
+.links-button:hover {
+    background-color: #669ec0;
+}
+
+
+.btn-twitter::before {
+    content: url("../img/twitter.svg");
+}
+  
+.btn-facebook::before {
+    content: url("../img/fb-icon.svg");
+}
+  
+.btn-youtube::before {
+    content: url("../img/youtube.svg");
+}
+
+.btn-twitter:focus::before {
+    opacity: .3;
+}
+.btn-facebook:focus::before {
+    opacity: .3;
+}
+  
+.btn-youtube:focus::before {
+    opacity: .3;
 }
 .footer-logo {
     display: flex;
-    
-    font-family: "PT Sans", sans-serif;
-    font-size: 14px;
-    align-items: center;
+    justify-content: space-between;
+    width: 196px;
 
 }
+.footer-logo p {
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.footer-logo-academy {
+    width: 115px;
+    height: 41px;
+    padding-top: 14px;
+}
 
-
+.footer-logo-academy path {
+    fill: #000000;
+  }
+  
+.footer-logo-academy:hover path {
+    fill: #81b3d2;
+}
+  
+.footer-logo-academy:active path {
+    fill: #bdbbbc;
+}
 /* стили второй страницы */
+.filter-range {
+    width: 330px;
+    margin: 50px auto; /* для демо */
+  
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .filter-range-title {
+    margin-bottom: 9px;
+  
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .price-controls {
+    position: relative;
+    
+    height: 36px;
+    margin-bottom: 20px;
+    
+    font-size: 0;
+  
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .price-controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  
+  .price-controls .min-price,
+  .price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+  }
+  
+  .price-controls input {
+    width: 50px;
+    margin: 0;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+  }
+  
+  .range-controls {
+    position: relative;
+  
+    margin-bottom: 32px;
+  }
+  
+  .range-controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .range-controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+  }
+  
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+    
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover {
+    background: #1c4f80;
+  }
+  
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
+  }
+  
+  .btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+  
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .btn-transparent:hover {
+    color: #000000;
+  
+    background: #ffffff;
+  }
 
+  .infrastructure legend {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 21px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 27px;
+}
+
+.type-house legend {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 21px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 26px;
+	padding-left: 3px;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.input label {
+	color: #ffffff;
+	line-height: 21px;
+	font-weight: normal;
+	
+}
+
+.label-infro {
+	padding-left: 4px;
+}
+
+.label-type {
+	padding-left: 5px;
+}
+.checkbox-form-infrastructure {
+	list-style: none;
+	padding-left: 32px;
+	padding-top: 7px;
+	margin-top: 18px;
+}
+
+.checkbox-form-type {
+	list-style: none;
+	padding-left: 35px;
+	padding-top: 7px;
+	margin-top: 19px;
+}
 
 .hotel-card  {
     font-family: "PT Sans", sans-serif;
