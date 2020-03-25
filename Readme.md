@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+﻿# Личный проект «Седона»
 
 * Студент: [Александр Лошаков](https://up.htmlacademy.ru/htmlcss/27/user/476767).
-* Наставник: Ксения Григорьева (https://htmlacademy.ru/profile/arctic_pie)
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080)
 
 ---
 
