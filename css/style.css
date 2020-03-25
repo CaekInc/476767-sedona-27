@@ -114,7 +114,9 @@ img {
     
     
 }
-
+.meeting {
+    background-color: #ffffff;
+}
 
 
 .meeting-logo {
@@ -129,7 +131,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;   
-    padding-top: 78px;
+    /* padding-top: 78px; */
+    padding-top: 50px;
     
 
   
@@ -142,27 +145,39 @@ img {
     height: 59px;
     background: url(../img/intro-mask.svg) ;
     position: relative;
-    bottom: -12px;
+    /* bottom: -12px; */
+    bottom: -25px;
     
 }
+
 .logo-text {
     text-align: center;
+    font-family: inherit;
     background-color: white;
-    padding-top: 60px;
-    padding-bottom: 51px;
-    
+    /* padding-top: 40px;
+    padding-bottom: 51px; */
+    min-height: 214px;
     
     
 }
 .logo-text h2 {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 21px;
     line-height: 1.238;
+    padding-top: 59px;
+    width: 447px;
+    margin: auto;
+    text-align: center;
 }
 .logo-text p {
     color: #333333;
     font-size: 14px;
+    padding-top: 18px;
+    
 }
-
+.bridge {
+    width: 346px;
+}
 .advantages-1,
 .advantages-2 {
     display: flex;
@@ -185,6 +200,15 @@ img {
     font-size: 21px;
     font-weight: 700;
     line-height: 21px;
+    width: 159px;
+    margin: auto;
+}
+.advantages-blue p {
+    padding-top: 10px;
+}
+.advantages-blue p:last-child {
+    width: 290px;
+    margin: auto;
 }
 
 .advantages-white {
@@ -193,6 +217,7 @@ img {
     background-color: #ffffff;
     padding-top: 160px;
 }
+
 .advantages-beige {
     width: 400px;
     height: 256px;
@@ -208,21 +233,30 @@ img {
 .advantages-white h3 {
     font-size: 21px;
     line-height: 21px;
+    margin-top: 0;
+}
+.advantages-white p {
+    width: 300px;
+    margin: auto;
+    padding-top: 5px;
 }
 .adv-house {
     background-image: url(../img/icon-1.svg);
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 23%;
 }
 .adv-food {
     background-image: url(../img/icon-3.svg);
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 23%;
 }
 .adv-souvenir {
     background-image: url(../img/icon-2.svg);
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 23%;
+}
+.adv-souvenir p {
+    width: 346px;
 }
 .search-wrap {
     margin-top: 0;
@@ -279,7 +313,7 @@ img {
     width: 568px;
     min-height: 395px;
     background-color: #fff;
-    margin-bottom: auto;
+    margin-bottom: 94px;
     padding-left: 56px;
     padding-top: 63px;
 }
@@ -354,7 +388,7 @@ img {
 	border: none;
 	outline: 0;
 }
-.btn-found {
+.btn-find {
     font: inherit;
     text-transform: uppercase;
     color: #fff;
