@@ -52,7 +52,9 @@ img {
     
     
 }
-
+.main {
+    background-color: #ffffff;
+}
 .nav {
     font-size: 14px;
     font-weight: bold;
@@ -175,9 +177,7 @@ img {
     padding-top: 18px;
     
 }
-.bridge {
-    width: 346px;
-}
+
 .advantages-1,
 .advantages-2 {
     display: flex;
@@ -230,6 +230,9 @@ img {
     font-weight: 700;
     line-height: 21px;
 }
+.advantages-beige p {
+    padding-top: 5px ;
+}
 .advantages-white h3 {
     font-size: 21px;
     line-height: 21px;
@@ -265,17 +268,26 @@ img {
 }
 .offer {
     text-align: center;
-    font-size: 21px;
-    line-height: 1.238;
-    padding-top: 58px;
-    padding-bottom: 50px;
     background-color: #ffffff;
+    min-height: 151px;
+    margin-top: 52px;
+}
+.offer h3 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
 }
 .offer p {
     color: #333333;
     font-size: 14px;
+    line-height: 24px;
+    padding-top: 9px;
+
 }
 
+.bridge p:last-child  {
+    width: 320px;
+}
 .btn-sedona {
     font: inherit;
     color: #fff;
@@ -398,7 +410,7 @@ img {
     font-weight: 700;
     display: block;
     padding: 16px 132px;
-    margin-top: 53px;
+    margin-top: 57px;
     margin-right: 55px;
 }
 .search-wrap-bottom {
@@ -537,7 +549,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 121px;
+    min-height: 122px;
     box-sizing: border-box;
     padding-top: 30px;
     padding-left: 123px;
